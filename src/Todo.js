@@ -212,7 +212,7 @@ const Todo = () => {
       }
   
       // Make a POST request to add the new task to the API
-      const response = await axios.post('muibackend-kei3.onrender.com/todos', { title: task, completed: false });
+      const response = await axios.post('http://muibackend-kei3.onrender.com/todos', { title: task, completed: false });
   
       // Handle the response as needed, e.g., update the UI or navigate to another page
       console.log('Task created:', response.data);
